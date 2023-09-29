@@ -8,3 +8,4 @@ export const configHeaders = () => {
 };
 
 export const BASE_URL = "https://movienew.cybersoft.edu.vn/api";
+// export const BASE_URL2 = "https://movie0706.cybersoft.edu.vn/api";

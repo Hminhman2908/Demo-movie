@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { userLocalStorage } from "../../page/api/localService";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Header() {
   let { info } = useSelector((state) => {
@@ -54,9 +54,11 @@ export default function Header() {
 
   return (
     <div className="h-20 flex items-center justify-between shadow-lg px-20">
-      <span className="text-3xl font-medium text-red-600 animate-pulse">
-        CyberFlix
-      </span>
+      <NavLink to="/">
+        <span className="text-3xl font-medium text-red-600 animate-pulse">
+          CyberFlix
+        </span>
+      </NavLink>
       <div className="space-x-5">{renderUserNav()}</div>
     </div>
   );

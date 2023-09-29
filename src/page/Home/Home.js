@@ -1,10 +1,12 @@
 import React from "react";
-import Header from "../../components/Header/Header";
+import ListMovie from "./ListMovie/ListMovie";
+import TabMovie from "./TabMovie/TabMovie";
 
 export default function Home() {
   return (
     <div>
-      <Header />
+      <ListMovie />
+      <TabMovie />
     </div>
   );
 }
